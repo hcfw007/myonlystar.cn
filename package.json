@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hcfw007/myonlystar.cn/issues"
   },
-  "homepage": "https://github.com/hcfw007/myonlystar.cn#readme"
+  "homepage": "https://github.com/hcfw007/myonlystar.cn#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
