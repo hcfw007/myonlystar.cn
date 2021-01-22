@@ -1,0 +1,19 @@
+{
+  "name": "myonlystar.cn",
+  "version": "1.0.0",
+  "description": "Re: Build a personal website from zero",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcfw007/myonlystar.cn.git"
+  },
+  "author": "Nick Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hcfw007/myonlystar.cn/issues"
+  },
+  "homepage": "https://github.com/hcfw007/myonlystar.cn#readme"
+}
