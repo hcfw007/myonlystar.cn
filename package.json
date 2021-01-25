@@ -18,5 +18,8 @@
   "homepage": "https://github.com/hcfw007/myonlystar.cn#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0"
   }
 }
