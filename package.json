@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/hcfw007/myonlystar.cn#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "log": "^6.3.1",
+    "mongoose": "^6.0.15"
   },
   "devDependencies": {
     "eslint": "^7.18.0"
