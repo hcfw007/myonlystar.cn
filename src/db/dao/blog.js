@@ -16,10 +16,9 @@ const blogSchema = {
 
 const Blog = mongoose.model('blog', blogSchema)
 
-const postBlog = (blogInfo, callback) => {
-  Blog.create(blogInfo).then(res => {
-    callback(res)
-  })
+const postBlog = (blogInfo) => {
+  console.log(blogInfo)
+  return Blog.create(blogInfo)
 }
 
 module.exports = {
