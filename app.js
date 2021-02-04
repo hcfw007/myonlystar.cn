@@ -1,6 +1,9 @@
 const path = require('path')
 const express = require('express')
 
+const log = require('npmlog')
+log.level = 'verbose'
+
 const apiRouter = require('./src/router')
 
 const app = express()
