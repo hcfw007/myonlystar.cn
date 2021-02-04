@@ -10,5 +10,6 @@ router.get('/test', (req, res) => {
 // blogs
 router.post('/blog/post', blogController.postBlog)
 router.get('/blog/list', blogController.listBlog)
+router.get('/blog/getById', blogController.getBlogById)
 
 module.exports = router

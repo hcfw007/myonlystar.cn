@@ -33,7 +33,13 @@ const getBlogList = (query = {}, pageSize = 10, pageNum = 0) => {
   return Blog.find(query).sort('-date').skip(pageNum * pageSize).limit(pageSize)
 }
 
+const getBlog = (query = {}) => {
+  log.verbose(PRE, `getBlog(${ JSON.stringify(query) }`)
+  return Blog.findOne(query)
+}
+
 module.exports = {
   postBlog,
   getBlogList,
+  getBlog,
 }
