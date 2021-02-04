@@ -7,10 +7,8 @@ const userSchema = {
 
 const User = mongoose.model('user', userSchema)
 
-const findUser = (userInfo, callback) => {
-  User.findOne(userInfo).then((res) => {
-    callback(res)
-  })
+const findUser = (userInfo) => {
+  return User.findOne(userInfo)
 }
 
 module.exports = {

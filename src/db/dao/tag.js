@@ -6,16 +6,12 @@ const userSchema = {
 
 const Tag = mongoose.model('tag', userSchema)
 
-const findTag = (tagInfo, callback) => {
-  Tag.findOne(tagInfo).then((res) => {
-    callback(res)
-  })
+const findTag = (tagInfo) => {
+  return Tag.findOne(tagInfo)
 }
 
-const createTag = (tagInfo, callback) => {
-  Tag.create(tagInfo).then((res) => {
-    callback(res)
-  })
+const createTag = (tagInfo) => {
+  return Tag.create(tagInfo)
 }
 
 module.exports = {
