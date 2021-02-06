@@ -19,7 +19,7 @@ const createTag = (tagInfo) => {
   return Tag.create(tagInfo)
 }
 
-const getTagList = () => {
+const listTag = () => {
   log.verbose(PRE, 'getTagList()')
   return Tag.findAll()
 }
@@ -27,5 +27,5 @@ const getTagList = () => {
 module.exports = {
   findTag,
   createTag,
-  getTagList,
+  listTag,
 }
