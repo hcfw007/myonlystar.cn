@@ -3,12 +3,12 @@ const tagModel = require('../db/dao/tag')
 
 const PRE = 'Tag Controller'
 
-const addTag = async (req, res) => {
+const postTag = async (req, res) => {
   log.verbose(PRE, 'addTag()')
 
   const body = req.body
 
-  await tagModel.createTag(body)
+  await tagModel.postTag(body)
 
   res.json({
     result: 'success'
@@ -26,6 +26,6 @@ const listTag = async (req, res) => {
 }
 
 module.exports = {
-  addTag,
+  postTag,
   listTag,
 }

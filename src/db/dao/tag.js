@@ -22,8 +22,8 @@ const findTag = (tagInfo) => {
   return Tag.findOne(tagInfo)
 }
 
-const createTag = (tagInfo) => {
-  log.verbose(PRE, `createTag(${ JSON.stringify(tagInfo) })`)
+const postTag = (tagInfo) => {
+  log.verbose(PRE, `postTag(${ JSON.stringify(tagInfo) })`)
   return Tag.create(tagInfo)
 }
 
@@ -34,6 +34,6 @@ const listTag = () => {
 
 module.exports = {
   findTag,
-  createTag,
+  postTag,
   listTag,
 }

@@ -15,7 +15,7 @@ router.get('/blog/getById', blogController.getBlogById)
 
 // tags
 
-router.post('/tag/create', tagController.addTag)
+router.post('/tag/post', tagController.addTag)
 router.get('/tag/list', tagController.listTag)
 
 module.exports = router
