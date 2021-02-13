@@ -1,4 +1,4 @@
-const dbConfig = require('../../db.config')
+const dbConfig = require('../../config')
 const mongoose = require('mongoose')
 
 const url = `mongodb://${ dbConfig.MongoURL }:${ dbConfig.MongoPort }/${ dbConfig.MongoDbName }`
