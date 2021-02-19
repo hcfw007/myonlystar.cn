@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/hcfw007/myonlystar.cn#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^6.0.15",
     "npmlog": "^6.0.0"
