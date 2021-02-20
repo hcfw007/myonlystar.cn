@@ -20,7 +20,7 @@ const listBlog = async (req, res) => {
 
   const query = req.query
 
-  const result = await blogModel.getBlog(query.query)
+  const result = await blogModel.listBlog(query.query)
 
   res.json({
     result: 'success',

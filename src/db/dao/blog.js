@@ -28,7 +28,7 @@ const postBlog = (blogInfo) => {
   return Blog.create(blogInfo)
 }
 
-const getBlogList = (query = {}, pageSize = 10, pageNum = 0) => {
+const listBlog = (query = {}, pageSize = 10, pageNum = 0) => {
   log.verbose(PRE, `getBlogList(${ JSON.stringify(query) }, ${ pageSize }, ${ pageNum })`)
   return Blog.find(query).sort('-date').skip(pageNum * pageSize).limit(pageSize)
 }
@@ -40,6 +40,6 @@ const getBlog = (query = {}) => {
 
 module.exports = {
   postBlog,
-  getBlogList,
+  listBlog,
   getBlog,
 }
