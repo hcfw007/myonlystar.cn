@@ -16,6 +16,7 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 app.use(cors())
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'frontend', 'index.html')))
+app.get('/pages/*', (req, res) => res.sendFile(path.join(__dirname, 'frontend', 'index.html')))
 
 app.use('/api', apiRouter)
 
