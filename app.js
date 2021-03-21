@@ -2,6 +2,7 @@ const path = require('path')
 const express = require('express')
 const cors = require('cors')
 const AppPort = require('./config').AppPort
+const init = require('./src/helpers/init')
 
 const log = require('npmlog')
 log.level = 'verbose'
@@ -9,6 +10,7 @@ log.level = 'verbose'
 const apiRouter = require('./src/router')
 
 const app = express()
+init()
 const port = AppPort
 
 app.use(express.json()) // for parsing application/json
