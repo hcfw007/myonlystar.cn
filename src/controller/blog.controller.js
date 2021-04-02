@@ -8,10 +8,11 @@ const postBlog = async (req, res) => {
 
   const body = req.body
 
-  await blogModel.postBlog(body)
+  const result = await blogModel.postBlog(body)
 
   res.json({
-    result: 'success'
+    result: 'success',
+    data: result
   })
 }
 
@@ -33,8 +34,7 @@ const getBlogById = async (req, res) => {
 
   const query = req.query
   const id = query.id
-
-  const result  = await blogModel.getBlog({ id })
+  const result  = await blogModel.getBlogById(id)
 
   res.json({
     result: 'success',
