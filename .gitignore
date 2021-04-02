@@ -110,3 +110,5 @@ start.sh
 
 # frontend
 frontend/
+
+run-test.sh
