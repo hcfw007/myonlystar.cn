@@ -17,13 +17,16 @@ app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 app.use(cors())
 
+const frontend = path.join(config.FrontendDir, 'frontend')
+const index = path.join(frontend, 'index.html')
+
 if (!config.NoFrontend) {
   log.info(PRE, 'init frontend')
   init()
 
-  app.get('/', (req, res) => res.sendFile(path.join(config.FrontendDir, 'frontend', 'index.html')))
-  app.get('/pages/*', (req, res) => res.sendFile(path.join(config.Frontend, 'frontend', 'index.html')))
-  app.use(express.static(path.join(config.FrontendDir, 'frontend')))
+  app.get('/', (req, res) => res.sendFile(index))
+  app.get('/pages/*', (req, res) => res.sendFile(index))
+  app.use(express.static(frontend))
 } else {
   log.info(PRE, 'init frontend skipped')
 }
@@ -31,4 +34,4 @@ if (!config.NoFrontend) {
 app.use('/api', apiRouter)
 
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`app started on port ${port}!`))
