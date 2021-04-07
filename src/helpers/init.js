@@ -10,6 +10,7 @@ const init = () => {
   const frontendExists = fs.existsSync(path.join(__dirname, '..', '..', 'frontend', 'index.html'))
   if (frontendExists) {
     log.info(PRE, 'frontend already exists')
+    return
   }
   log.info(PRE, 'frontend not found, will get latest version...')
   projectService.getLatestFrontend()
