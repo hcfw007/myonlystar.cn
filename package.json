@@ -1,6 +1,6 @@
 {
   "name": "myonlystar.cn",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Re: Build a personal website from zero",
   "main": "app.js",
   "scripts": {
