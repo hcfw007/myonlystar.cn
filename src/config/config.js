@@ -4,4 +4,8 @@ module.exports = {
   MongoDbName: process.env.MONGO_DBNAME || 'myonlystar',
 
   AppPort: Number(process.env.APP_PORT || '3000'),
+
+  FrontendDir: process.env.FRONTEND_DIR || process.cwd(),
+
+  NoFrontend: process.env.NO_FRONTEND === 'true',
 }
