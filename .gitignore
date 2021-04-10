@@ -107,3 +107,6 @@ dist
 
 # test code
 start.sh
+
+# frontend
+frontend/
