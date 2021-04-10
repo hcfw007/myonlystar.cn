@@ -23,7 +23,7 @@ const connect = () => {
     if (err) {
       log.error(PRE, `Mongoose connection error ${err}`)
     } else {
-      log.info(PRE, 'Mongoose connect')
+      log.info(PRE, 'Mongoose connected')
     }
   })
 }
